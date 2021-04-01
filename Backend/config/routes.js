@@ -1,14 +1,14 @@
 
 const home = require('../Pages/Home');
-const about = require('../Pages/About');
+const users = require('../Pages/Users');
 
 module.exports = {
     '/': {
         'method' : "get",
         'callback': home,
     },
-    '/about': {
+    '/users': {
         'method' : "get",
-        'callback': about
+        'callback': users
     }
 }
