@@ -1,0 +1,25 @@
+{
+  "name": "jsfram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qamar-h/JSFram.git"
+  },
+  "authors": [
+    "Hayat Qamar",
+    "GENOLHAC Xavier"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qamar-h/JSFram/issues"
+  },
+  "homepage": "https://github.com/qamar-h/JSFram#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
