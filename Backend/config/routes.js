@@ -1,14 +1,14 @@
 
-const home = require('../Pages/Home');
-const users = require('../Pages/Users');
+const HomeController = require('../Controller/HomeController');
+const UsersController = require('../Controller/UsersController');
 
 module.exports = {
     '/': {
         'method' : "get",
-        'callback': home,
+        'callback': HomeController.index,
     },
     '/users': {
         'method' : "get",
-        'callback': users
+        'callback': UsersController.index
     }
 }
