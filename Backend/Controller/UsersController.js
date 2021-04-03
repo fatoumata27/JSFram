@@ -12,5 +12,15 @@ module.exports  = {
         });
     },
 
+    create: function(req,res) {
+        res.setHeader('Content-Type', 'application/json');
+        res.end(JSON.stringify('user created'));
+    },
+
+    read: function(req,res) {
+        res.setHeader('Content-Type', 'application/json');
+        res.end(JSON.stringify('user ' . req.params.id));
+    }
+
 }
 
