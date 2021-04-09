@@ -10,21 +10,22 @@
 
 <body>
     <div class="contenainer">
-        <form method="POST" id="registerForm">
+        <form method="POST" id="registerForm" novalidate>
             <fieldset>
-                <label for="fistname"><b>Nom :</b></label>
+                <label for="firstname"><b>Nom :</b></label>
                 <input type="text" name="firstname" id="firstname" required />
+                <span id="missfirstname"></span></p>
                 <label for="lastname"><b>Prénom :</b></label>
-                <input type="text" name="lastname" id="lastname" class="lastname" required />
+                <input type="text" name="lastname" id="lastname" class="lastname" />
                 <label for="email"><b>E-mail :</b></label>
-                <input type="email" name="email" id="email" class="email" required />
+                <input type="email" name="email" id="email" class="email" />
                 <label for="password"><b>Mot de passe :</b></label>
-                <input type="password" name="pwd" id="pwd" class="pwd" required />
-                <button type="submit">S'enregistrer</button>
+                <input type="password" name="pwd" id="pwd" class="pwd" />
+                <button type="submit" id="send_button">S'enregistrer</button>
             </fieldset>
         </form>
     </div>
-    <scrip src="../scripts/register.js"></scrip>
+    <script src="../scripts/register.js"></script>
 </body>
 
 </html>
