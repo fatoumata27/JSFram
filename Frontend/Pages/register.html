@@ -9,21 +9,29 @@
 </head>
 
 <body>
-    <div class="contenainer">
+    <div class="container">
         <form method="POST" id="registerForm" novalidate>
             <fieldset>
-                <label for="firstname"><b>Nom :</b></label>
-                <input type="text" name="firstname" id="firstname" required />
-                <span id="missfirstname"></span></p>
-                <label for="lastname"><b>Prénom :</b></label>
-                <input type="text" name="lastname" id="lastname" required />
-                <span id="misslastname"></span></p>
-                <label for="email"><b>E-mail :</b></label>
-                <input type="email" name="email" id="email" required />
-                <span id="missemail"></span></p>
-                <label for="password"><b>Mot de passe :</b></label>
-                <input type="password" name="pwd" id="pwd" required />
-                <span id="misspassword"></span></p>
+                <div class="form-firstname">
+                    <label for="firstname">Nom :</label>
+                    <input type="text" name="firstname" id="firstname" required />
+                    <span id="missfirstname"></span></p>
+                </div>
+                <div class="form-lastname">
+                    <label for="lastname">Prénom :</label>
+                    <input type="text" name="lastname" id="lastname" required />
+                    <span id="misslastname"></span></p>
+                </div>
+                <div class="form-email">
+                    <label for="email">E-mail :</label>
+                    <input type="email" name="email" id="email" required />
+                    <span id="missemail"></span></p>
+                </div>
+                <div class="form-pwd">
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" name="pwd" id="pwd" required />
+                    <span id="misspassword"></span></p>
+                </div>
                 <button type="submit" id="send_button">S'enregistrer</button>
             </fieldset>
         </form>
