@@ -1,12 +1,3 @@
-/*
-const lastname = document.getElementById('lastname');
-const email = document.getElementById('email');
-const password = document.getElementById('password');
-const send_button = document.getElementById('send_button');
-const form = document.getElementById('registerForm');
-let fieldOK = true;
-*/
-
 const firstname = document.getElementById('firstname');
 const lastname = document.getElementById('lastname');
 const email = document.getElementById('email');
