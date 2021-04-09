@@ -5,21 +5,12 @@ const password = document.getElementById('password');
 const send_button = document.getElementById('send_button');
 const form = document.getElementById('registerForm');
 let fieldOK = true;
-console.log('je suis là');
-form.addEventListener('submit', (e) => {
-    console.log(e);
-    alert('hello');
-    if (firstname.validity.valueMissing) {
-        alert('bou');
-        //preventDefault <=> Arret du comportement normal du HTML
-        e.preventDefault();
-        missfirstname.textContent = 'Nom manquant';
-        missfirstname.style.color = 'red';
-        fieldOK = false;
-    }
-})*/
+*/
 
 const firstname = document.getElementById('firstname');
+const lastname = document.getElementById('lastname');
+const email = document.getElementById('email');
+const password = document.getElementById('pwd');
 const registerForm = document.getElementById("registerForm");
 
 registerForm.addEventListener("submit", (e) => {
@@ -27,5 +18,20 @@ registerForm.addEventListener("submit", (e) => {
         e.preventDefault();
         missfirstname.textContent = 'Nom manquant';
         missfirstname.style.color = 'red';
+    }
+    if (!lastname.validity.valid) {
+        e.preventDefault();
+        misslastname.textContent = 'Prénom manquant';
+        misslastname.style.color = 'red';
+    }
+    if (!email.validity.valid) {
+        e.preventDefault();
+        missemail.textContent = 'E-mail manquant';
+        missemail.style.color = 'red';
+    }
+    if (!password.validity.valid) {
+        e.preventDefault();
+        misspassword.textContent = 'Mot de passe manquant';
+        misspassword.style.color = 'red';
     }
 });
